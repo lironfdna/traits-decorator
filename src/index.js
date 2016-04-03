@@ -3,7 +3,7 @@ const _REF_ = Symbol();
 const _COCKTAIL_REQUIRED_NAME_ = '$$required$$';
 
 function _filterKeys(key) {
-    return !key.match(/^(?:constructor|prototype|arguments|caller|name|bind|call|apply|toString|length)$/);
+    return !key.match(/^(?:constructor|prototype|arguments|caller|name|bind|call|apply|toString|length|__esModule)$/);
 }
 
 function _isRequiredMethod(target, methodName) {
